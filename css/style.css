@@ -36,7 +36,13 @@
     opacity: 0.2;
 }
 body{
-  margin: 0px 0px 0px 0px;
+  font-weight: 300;
+  line-height: 133.333333%
+  color: #333;
+  background-color: white;
+  font-family: Neue Helvetica,Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  letter-spacing: .5px;
 }
 .ol{
   background-position: center;
@@ -61,6 +67,8 @@ header{
   position: relative;
   margin-top: 0px;
 }
+/** Commented out by Brett due to incompatability with new Nav
+
 header nav{
   margin-top:0px;
   font-family: 'Raleway', sans-serif;
@@ -88,7 +96,7 @@ nav a{
 .navcolor{
 background-color: #fff;
 box-shadow: 0 0 10px #000;
-}
+}**/
 
 .titletext span{
 
@@ -152,6 +160,103 @@ color:#808080;
   display: none;
   text-align: center;
 }
+
+/*Brett Nav*/
+.main_nav {
+    position: fixed;
+    background-color: white;
+    top: 0px;
+    width: 100%;
+    height: 3em;
+    z-index: 10;
+}
+
+.nav_menu {
+  display: inline;
+  position: fixed;
+  right: 0;
+}
+
+.nav_link {
+  display: inline;
+  right: 5px;
+}
+
+.nav_link a {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  color: #0033ab;
+  text-decoration: none;
+  margin: 30px;
+}
+
+.nav_logo {
+  transition: .5s;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+/*Brett Footer*/
+.footer {
+  background: #000;
+  padding: 70px 0 85px;
+  width: 100%;
+
+}
+
+.fa {
+  color: white;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin left: 10px;
+  margin right: 10px;
+}
+
+.social_icons {
+  display: flex;
+  margin: 0 0 40px;
+  flex-basis: 50%;
+  max-width: 50%;
+}
+.social_icons li {
+  display: inline;
+  margin-left: 1em;
+  right: 0;
+}
+
+.footer_link {
+  color: #fff;
+  font-size: 12px;
+}
+
+.footer_img {
+  width: 50%;
+  margin-bottom: 40px;
+  transition: .25s;
+}
+
+.footer_img:hover {
+  opacity: .5;
+}
+
+
+/*Media Queries */
+
 @media (min-aspect-ratio: 16/9) {
   .fullscreen-bg__video {
     height: 300%;
