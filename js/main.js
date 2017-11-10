@@ -38,9 +38,9 @@ $(window).scroll(function() {
   if (distanceScrolled>100) {
     $(".statement .img").fadeIn(1500);
   }
-  // else if (distanceScrolled=99) {
-  //   $(".statement .img").fadeOut(1500);
-  // }
+  else if (distanceScrolled=50) {
+    $(".statement .img").fadeOut(0);
+  }
 });
 
 $(document).ready(function(){
