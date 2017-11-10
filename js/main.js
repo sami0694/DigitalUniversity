@@ -34,6 +34,13 @@ $(window).scroll(function() {
   else{
     headerNav.removeClass('navcolor');
   }
+
+  if (distanceScrolled>100) {
+    $(".statement .img").fadeIn(1500);
+  }
+  // else if (distanceScrolled=99) {
+  //   $(".statement .img").fadeOut(1500);
+  // }
 });
 
 $(document).ready(function(){
