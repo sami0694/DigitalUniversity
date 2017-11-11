@@ -51,7 +51,7 @@ body{
   top: 20%;
   left: 35%;
   /*transform: translate(-50%, -50%);*/
-  font-family: Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: #0033AB;
   transition: all 1s ease;
@@ -120,12 +120,13 @@ text-align: center;
 .statement{
 
   display: grid;
-  grid-template-columns: 10% 45% 45%;
+  grid-template-columns: 60% 40%;
 }
 
 .statement .txt{
-text-align: center;
-margin: 0px 10px 40px 80px;
+  height: 520px;
+  text-align: left;
+  margin: 0px 10px 40px 80px;
 
 }
 .statement ul li{
@@ -139,19 +140,77 @@ margin: 0px 10px 40px 80px;
 .statement ul li:hover{
   color:#0033AB;
 }
-.statement .txt h2{
 
-  font-size: 40px;
+.statement .txt h2{
+  font-size: 48px;
 }
+
 .statement .txt p{
 padding-top: 0px;
-font-size: 30px;
+font-size: 24px;
 color:#808080;
 }
+
 .statement .img{
   display: none;
   text-align: center;
 }
+
+.hd:before{
+  background: #000;
+  content: "";
+  display: block;
+  height: 4px;
+  margin-bottom: 30px;
+  width: 120px;
+}
+
+.disc2Col{
+  display: inline;
+}
+
+.disciplines{
+  display: grid;
+  font-size: 28px;
+  margin:auto;
+  padding-top: 10px;
+}
+
+#left{
+  width: 50%;
+  float: left;
+}
+
+#right{
+  width: 50%;
+  float: right;
+}
+
+.disciplines a{
+  text-decoration: none;
+  color: black;
+}
+
+.disciplines div{
+  width: 99%;
+  border: 2px solid white;
+  display: inline-flex;
+  padding: 10px 0px;
+  transition: all 1.5s ease;
+}
+
+.disciplines div:hover{
+  border: 2px solid #0033AB;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+}
+
+.disciplines div img{
+  width: 42px;
+  height: 42px;
+}
+
 @media (min-aspect-ratio: 16/9) {
   .fullscreen-bg__video {
     height: 300%;
