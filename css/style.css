@@ -1,3 +1,15 @@
+html { font-size: 62.5%; }
+
+@font-face {
+  font-family: 'Helvetica';
+  font-style:normal;font-weight:400;src:url(/fonts/Helvetica.eot?#iefix) format("embedded-opentype"),url(/fonts/Helvetica.woff) format("woff"),url(/fonts/Helvetica.ttf) format("truetype"),url(/fonts/Helvetica.svg#svgFontName) format("svg");
+}
+
+@font-face {
+  font-family: 'HelveticaBold';
+  font-style:normal;font-weight:400;src:url(/fonts/Helvetica-Bold.eot?#iefix) format("embedded-opentype"),url(/fonts/Helvetica-Bold.woff) format("woff"),url(/fonts/Helvetica-Bold.ttf) format("truetype"),url(/fonts/Helvetica-Bold.svg#svgFontName) format("svg");
+}
+
 /*.ol{
   background-image: url("/Users/sami/Desktop/DU/images/home-header.jpg");
   background-position: center;
@@ -9,7 +21,7 @@
 .cap h1 {
   text-align: center;
   color:#ffffff;
-  font-size: 120px;
+  font-size: 120px; font-size: 12.0rem;
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   margin-bottom: 0px;
@@ -47,11 +59,11 @@ body{
 }
 .titletext{
   position: absolute;
-  font-size: 40px;
+  font-size: 40px; font-size: 4.0rem;
   top: 20%;
   left: 35%;
   /*transform: translate(-50%, -50%);*/
-  font-family: Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: #0033AB;
   transition: all 1s ease;
@@ -64,7 +76,7 @@ header{
 header nav{
   margin-top:0px;
   font-family: 'Raleway', sans-serif;
-  font-size: 22px;
+  font-size: 22px; font-size: 2.2rem;
   padding-top: 10px;
   padding-bottom: 10px;
   position: fixed;
@@ -98,13 +110,13 @@ box-shadow: 0 0 10px #000;
 }
  #change{
   color: #0033AB;
-  font-size:60px;
+  font-size: 60px; font-size:6.0rem;
   text-transform: capitalize;
 }
 #col{
   color:#000;
-  font-size: 80px;
-    text-transform: lowercase;
+  font-size: 80px; font-size: 8.0rem;
+  text-transform: lowercase;
 }
 
 /*.ol h2{
@@ -112,7 +124,7 @@ box-shadow: 0 0 10px #000;
   padding-top: 10px;
 text-align: center;
   color:#000;
-  font-size: 26px;
+  font-size: 26px; font-size: 2.6rem;
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
 }*/
@@ -120,12 +132,14 @@ text-align: center;
 .statement{
 
   display: grid;
-  grid-template-columns: 10% 45% 45%;
+  grid-template-columns: 60% 40%;
 }
 
 .statement .txt{
-text-align: center;
-margin: 0px 10px 40px 80px;
+  height: 520px;
+  font-family: 'HelveticaBold', sans-serif;
+  text-align: left;
+  margin: 0px 10px 40px 80px;
 
 }
 .statement ul li{
@@ -133,25 +147,82 @@ margin: 0px 10px 40px 80px;
   margin-right: 20px;
   text-align: center;
   transition: all .5s ease;
-  /*font-size: 20px;*/
+  /*font-size: 20px; font-size: 2.0rem;*/
 }
 
 .statement ul li:hover{
   color:#0033AB;
 }
-.statement .txt h2{
 
-  font-size: 40px;
+.statement .txt h2{
+  font-size: 48px;font-size: 4.8rem;
+  margin: 0px;
 }
+
 .statement .txt p{
 padding-top: 0px;
-font-size: 30px;
+font-size: 24px;font-size: 2.4rem;
 color:#808080;
 }
+
 .statement .img{
   display: none;
   text-align: center;
 }
+
+.hd:before{
+  background: #000;
+  content: "";
+  display: block;
+  height: 4px;
+  margin-bottom: 30px;
+  width: 120px;
+}
+
+.disc2Col{
+  display: inline;
+}
+
+.disciplines{
+  display: grid;
+  font-size: 24px;font-size: 2.4rem;
+  margin:auto;
+  padding-top: 10px;
+}
+
+#left{
+  width: 50%;
+  float: left;
+}
+
+#right{
+  width: 50%;
+  float: right;
+}
+
+.disciplines a{
+  text-decoration: none;
+  color: black;
+}
+
+.disciplines div{
+  width: 99%;
+  border: 2px solid white;
+  display: inline-flex;
+  padding: 10px 0px;
+  transition: all 1.5s ease;
+}
+
+.disciplines div:hover{
+  border: 2px solid #0033AB;
+  border-radius: 20px;
+}
+
+.disciplines div img{
+  width: 42px;
+  height: 42px;
+}
+
 @media (min-aspect-ratio: 16/9) {
   .fullscreen-bg__video {
     height: 300%;
