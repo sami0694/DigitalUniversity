@@ -200,27 +200,81 @@ color:#808080;
   float: right;
 }
 
-.disciplines a{
-  text-decoration: none;
-  color: black;
+.disciplines button{
+  border: 3px solid #fff;
 }
 
-.disciplines div{
-  width: 99%;
-  border: 2px solid white;
-  display: inline-flex;
-  padding: 10px 0px;
-  transition: all 1.5s ease;
+.box div{
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.disciplines div:hover{
-  border: 2px solid #0033AB;
-  border-radius: 20px;
-}
-
-.disciplines div img{
+.disciplines button img{
   width: 42px;
   height: 42px;
+}
+
+.disciplines1{
+  display: inline-block;
+  width: 90%;
+  position: relative;
+  padding: 10px 0px;
+  align-items: center;
+  background: none;
+  border: none;
+  font-size: 18px; font-size: 1.8rem;
+  cursor: pointer;
+  margin: 10px 20px;
+  background: none;
+}
+
+.box {
+  position: relative;
+  width: 90%;
+  display: flex;
+  align-items: left;
+  vertical-align: middle;
+  background: none;
+  font-size: 18px; font-size: 1.8rem;
+  margin: 10px 20px;
+  padding: 5px 0px;
+  transition: 0.5s;
+  cursor: pointer;
+  -webkit-transition:0.5s;
+}
+
+.box:hover {
+  border: 3px solid rgba(0,160,80,0);
+  color: #3059BB;
+}
+
+.box::before, .box::after {
+  width: 100%;
+  height:100%;
+  z-index: 3;
+  content:'';
+  position: absolute;
+  top:0;
+  left:0;
+  box-sizing: border-box;
+  -webkit-transform: scale(0);
+  transition: 0.5s;
+}
+
+.btn-1::before {
+  border-bottom: 3px solid #3059BB;
+  border-left: 3px solid #3059BB;
+  -webkit-transform-origin: 0 100%;
+}
+
+.btn-1::after {
+  border-top: 3px solid #3059BB;
+  border-right: 3px solid #3059BB;
+  -webkit-transform-origin: 100% 0%;
+}
+
+.box:hover::after, .box:hover::before {
+  -webkit-transform: scale(1);
 }
 
 @media (min-aspect-ratio: 16/9) {
