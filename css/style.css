@@ -1,48 +1,50 @@
 /*.ol{
-  background-image: url("/Users/sami/Desktop/DU/images/home-header.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100vh;
+background-image: url("/Users/sami/Desktop/DU/images/home-header.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 100vh;
 }
 
 .cap h1 {
-  text-align: center;
-  color:#ffffff;
-  font-size: 120px;
-  font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
-  margin-bottom: 0px;
-  padding-bottom: 10px;
+text-align: center;
+color:#ffffff;
+font-size: 120px;
+font-family: 'Raleway', sans-serif;
+text-transform: uppercase;
+margin-bottom: 0px;
+padding-bottom: 10px;
 }
 */
 
 .fullscreen-bg {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -100;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
 }
 
 .fullscreen-bg__video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
 }
 body{
   font-weight: 300;
   line-height: 133.333333%
   color: #333;
   background-color: white;
-  font-family: Neue Helvetica,Helvetica,Arial,sans-serif;
+  /*font-family: Neue Helvetica,Helvetica,Arial,sans-serif;*/
+  font-family:   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   letter-spacing: .5px;
+
 }
 .ol{
   background-position: center;
@@ -53,7 +55,7 @@ body{
 }
 .titletext{
   position: absolute;
-  font-size: 40px;
+  font-size: 36px;
   top: 20%;
   left: 35%;
   /*transform: translate(-50%, -50%);*/
@@ -70,27 +72,27 @@ header{
 /** Commented out by Brett due to incompatability with new Nav
 
 header nav{
-  margin-top:0px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 22px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  position: fixed;
-  text-align: center;
-  width: 100%;
-  z-index: 100;
-  transition: all 0.5s ease;
-  color:#000;
+margin-top:0px;
+font-family: 'Raleway', sans-serif;
+font-size: 22px;
+padding-top: 10px;
+padding-bottom: 10px;
+position: fixed;
+text-align: center;
+width: 100%;
+z-index: 100;
+transition: all 0.5s ease;
+color:#000;
 
 }
 nav a{
-  font-family: 'Raleway', sans-serif;
-  text-decoration: none;
-  margin-right: 45px;
-  margin-left: 20px;
-  text-align: center;
-  color: #000;
-  display: inline-block;
+font-family: 'Raleway', sans-serif;
+text-decoration: none;
+margin-right: 45px;
+margin-left: 20px;
+text-align: center;
+color: #000;
+display: inline-block;
 
 }
 .navcolor{
@@ -104,7 +106,7 @@ box-shadow: 0 0 10px #000;
 .titletext:hover{
 
 }
- #change{
+#change{
   color: #0033AB;
   font-size:60px;
   text-transform: capitalize;
@@ -112,28 +114,31 @@ box-shadow: 0 0 10px #000;
 #col{
   color:#000;
   font-size: 80px;
-    text-transform: lowercase;
+  text-transform: lowercase;
 }
 
 /*.ol h2{
-  margin-top: 600px;
-  padding-top: 10px;
+margin-top: 600px;
+padding-top: 10px;
 text-align: center;
-  color:#000;
-  font-size: 26px;
-  font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
+color:#000;
+font-size: 26px;
+font-family: 'Raleway', sans-serif;
+text-transform: uppercase;
 }*/
 
 .statement{
+  font-family: 'Raleway', sans-serif;
 
   display: grid;
-  grid-template-columns: 10% 45% 45%;
+  grid-template-columns: 60% 40%;
 }
 
 .statement .txt{
-text-align: center;
-margin: 0px 10px 40px 80px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+
+  margin: 0px 10px 40px 80px;
 
 }
 .statement ul li{
@@ -148,13 +153,13 @@ margin: 0px 10px 40px 80px;
   color:#0033AB;
 }
 .statement .txt h2{
-
+  margin-top:0px;
   font-size: 40px;
 }
 .statement .txt p{
-padding-top: 0px;
-font-size: 30px;
-color:#808080;
+  padding-top: 0px;
+  font-size: 30px;
+  color:#808080;
 }
 .statement .img{
   display: none;
@@ -163,12 +168,12 @@ color:#808080;
 
 /*Brett Nav*/
 .main_nav {
-    position: fixed;
-    background-color: white;
-    top: 0px;
-    width: 100%;
-    height: 3em;
-    z-index: 10;
+  position: fixed;
+  background-color: white;
+  top: 0px;
+  width: 100%;
+  height: 3em;
+  z-index: 10;
 }
 
 .nav_menu {
@@ -222,7 +227,7 @@ color:#808080;
   display: flex;
   flex: 1 1 auto;
   flex-direction: row;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   margin left: 10px;
   margin right: 10px;
 }
@@ -232,6 +237,7 @@ color:#808080;
   margin: 0 0 40px;
   flex-basis: 50%;
   max-width: 50%;
+  text-align: right;
 }
 .social_icons li {
   display: inline;
@@ -253,29 +259,193 @@ color:#808080;
 .footer_img:hover {
   opacity: .5;
 }
+.bk{
+  /*background: url(../images/bk-1.jpg) no-repeat top left;
+  background-size: cover;
+  background-position: 50% bottom;
+  opacity: 0.5;*/
+}
+#getStarted{
+  /*background: url(../images/bk-1.jpg) no-repeat top left;
+  background-size: cover;
+  background-position: 50% bottom;
+  opacity: 0.5;*/
+  background-color:#262C43;
+  margin: 0 0 0 0;
+  margin-bottom: 0px;
 
-
-/*Media Queries */
-
-@media (min-aspect-ratio: 16/9) {
-  .fullscreen-bg__video {
-    height: 300%;
-    top: -100%;
-  }
 }
 
-@media (max-aspect-ratio: 16/9) {
-  .fullscreen-bg__video {
-    width: 300%;
-    left: -100%;
-  }
+#get-2{
+  /*background: url(../images/bk-1.jpg) no-repeat top left;
+  background-size: cover;
+  background-position: 50% bottom;
+  opacity: 0.5;*/
+  background-color:#F4F4F4;
+  margin: 0 0 0 0;
+  margin-bottom: 0px;
+  font-family: 'Raleway', sans-serif;
+  padding-bottom: 30px;
 }
-/*@media (max-width: 767px) {
+
+
+#getStarted h1 {
+  font-size: 40px;
+  color:#FFF;
+  padding-top: 33px;
+  margin-left: 15px;
+  font-family: Neue Helvetica,Helvetica,Arial,sans-serif;
+
+}
+  #get-2 h1{
+  font-size: 40px;
+  color:#000;
+  margin-top: 0;
+  padding-top: 33px;
+  margin-left: 15px;
+  /*font-family: Neue Helvetica,Helvetica,Arial,sans-serif;*/
+  }
+
+  #getStarted h2{
+    margin-top: 0px;
+    color:#E12C4E ;
+    margin-left: 15px;
+  }
+  #getStarted p{
+    margin-left: 80px;
+    margin-right: 80px;
+    font-size: 24px;
+    color: #EDF1F9;
+    font-family: Neue Helvetica,Helvetica,Arial,sans-serif;
+    font-weight: lighter;
+    text-align: center;
+  }
+  #get-2 p{
+    margin-left: 80px;
+    margin-right: 80px;
+    font-size: 24px;
+    color: #000;
+    text-align: center;
+  }
+
+  #cyber{
+  background-color: #666666;
+  font-family: 'Raleway', sans-serif;
+      padding: 20px 20px 20px 20px;
+        color: #fff;
+
+  }
+  #cyber h1{
+  color: #fff;
+  margin-top: 0;
+  font-size: 40px;
+  }
+  #cyber h4{
+    padding-left: 20px;
+  }
+  .sec{
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+}
+  .sec p{
+      margin-left: 20px;
+      color:#fff;
+  }
+  /*.color{
+    background-color: #BDBDBD;
+    margin-left: 40px;
+  }*/
+  .df_info{
+    display: grid;
+    grid-template-columns: 34% 33% 33%;
+    padding-bottom: 80px;
+  }
+  .df_for{
+    margin-left: 80px;
+  }
+  .df_info p{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .df_info h3{
+    margin-top: 5px;
+    margin-bottom: 8px;
+    color:#FFB81C;
+  }
+
+  #frmt{
+    color: #fff;
+    font-weight:normal;
+    font-size: 18px;
+  }
+
+  .int_info{
+display: grid;
+grid-template-columns: 25% 25% 25% 25%;
+margin-right: 80px;
+margin-left: 80px;
+margin-top: 30px;
+text-align: center;
+font-size: 18px;
+  }
+
+  .pic_info{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+margin-right: 100px;
+margin-left: 100px;
+  margin-top: 40px;
+  text-align: center;
+  }
+
+.pic_info img {
+  width: 80px;
+}
+
+.pic_info h4{
+font-size: 14px;
+}
+
+#get-2 h3{
+text-align: center;
+border: solid 1px black;
+margin-left: 500px;
+margin-right: 500px;
+  font-size: 24px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #fff;
+}
+#get-2 h3:hover{
+  opacity: 0.6;
+}
+/*.pic_info img:hover{
+  opacity: 0.5;
+}*/
+
+  /*Media Queries */
+
+  @media (min-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+      height: 300%;
+      top: -100%;
+    }
+  }
+
+  @media (max-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+      width: 300%;
+      left: -100%;
+    }
+  }
+  /*@media (max-width: 767px) {
   .fullscreen-bg {
-    background: url('../img/videoframe.jpg') center center / cover no-repeat;
-  }
+  background: url('../img/videoframe.jpg') center center / cover no-repeat;
+}
 
-  .fullscreen-bg__video {
-    display: none;
-  }
+.fullscreen-bg__video {
+display: none;
+}
 }*/
