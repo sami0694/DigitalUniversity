@@ -46,3 +46,22 @@ $(window).scroll(function() {
 $(document).ready(function(){
     // myVar = setInterval("nextMsg()", 3000);
 });
+
+$(window).on('scroll', function () {
+	// Step 1: Google $(window).scrollTop();
+	var distanceScrolled = $(window).scrollTop();
+
+	// Step 2: Log distanceScrolled to the console to see what it holds!
+	console.log(distanceScrolled);
+	// if distanceScrolled is greater than or equal to 542
+	if (distanceScrolled > 100) {
+
+		// Add a class to the nav to make it fixed
+		$('.nav_logo').removeClass('hidden');
+	}
+	// else
+	// Remove the class from the nav to make it unfixed
+	else {
+		$('.nav_logo').addClass('hidden');
+	}
+});
