@@ -46,3 +46,42 @@ $(window).scroll(function() {
 $(document).ready(function(){
     // myVar = setInterval("nextMsg()", 3000);
 });
+
+$(window).on('scroll', function () {
+	// Step 1: Google $(window).scrollTop();
+	var distanceScrolled = $(window).scrollTop();
+
+	// Step 2: Log distanceScrolled to the console to see what it holds!
+	console.log(distanceScrolled);
+	// if distanceScrolled is greater than or equal to 542
+	if (distanceScrolled > 100) {
+
+		// Add a class to the nav to make it fixed
+		$('.nav_logo').fadeIn(500);
+	}
+	// else
+	// Remove the class from the nav to make it unfixed
+	else {
+		$('.nav_logo').fadeOut(200);
+	}
+});
+
+$('.foundational-button').on('click', function () {
+  $(this).parent().addClass('course-grid');
+  $(this).removeClass('unclicked');
+  $(this).next('.advanced-button').removeClass('unclicked');
+  $(this).siblings('.advanced').fadeOut(800).delay(500);
+  $(this).siblings('.foundational').fadeIn(800);
+});
+
+$('.advanced-button').on('click', function () {
+  $(this).parent().addClass('course-grid');
+  $(this).removeClass('unclicked');
+  $(this).siblings('.foundational-button').removeClass('unclicked');
+  $(this).siblings('.foundational').fadeOut(800).delay(500);
+  $(this).siblings('.advanced').fadeIn(800);
+});
+
+$('.course-list li').on('click', function () {
+  $(this).next().slideToggle(500);
+});
