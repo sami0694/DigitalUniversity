@@ -57,11 +57,16 @@ $(window).on('scroll', function () {
 	if (distanceScrolled > 100) {
 
 		// Add a class to the nav to make it fixed
+<<<<<<< HEAD
 		$('.nav_logo').fadeIn(500);
+=======
+		$('.nav_logo').removeClass('hidden');
+>>>>>>> 7b2dd6b3fc0ea23d5b1cd4227695458fe8fcb5cf
 	}
 	// else
 	// Remove the class from the nav to make it unfixed
 	else {
+<<<<<<< HEAD
 		$('.nav_logo').fadeOut(200);
 	}
 });
@@ -85,3 +90,8 @@ $('.advanced-button').on('click', function () {
 $('.course-list li').on('click', function () {
   $(this).next().slideToggle(500);
 });
+=======
+		$('.nav_logo').addClass('hidden');
+	}
+});
+>>>>>>> 7b2dd6b3fc0ea23d5b1cd4227695458fe8fcb5cf
