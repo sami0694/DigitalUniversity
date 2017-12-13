@@ -17,57 +17,50 @@ function nextMsg() {
         // if(i==disc.length ){i=0;}
         // setTimeout(arguments.callee,3000);
         console.log(i);
-        $('#change').fadeOut(1300,function(){
+        $('#change').fadeOut(2500,function(){
           i = (i+1) % disc.length;
           this.textContent=disc[i];
-        }).fadeIn(1300,nextMsg);
+        }).fadeIn(2500,nextMsg);
 };
 
 nextMsg();
-var headerNav = $('header nav');
-$(window).scroll(function() {
-  var distanceScrolled = $(this).scrollTop();
-  console.log(distanceScrolled);
-  if (distanceScrolled >= 50) {
-    headerNav.addClass('navcolor');
-  }
-  else{
-    headerNav.removeClass('navcolor');
-  }
-
-  if (distanceScrolled>100) {
-    $(".statement .img").fadeIn(1500);
-  }
-  else if (distanceScrolled=50) {
-    $(".statement .img").fadeOut(0);
-  }
-});
+// var headerNav = $('header nav');
+// $(window).scroll(function() {
+//   var distanceScrolled = $(this).scrollTop();
+//   console.log(distanceScrolled);
+//   if (distanceScrolled >= 50) {
+//     headerNav.addClass('navcolor');
+//   }
+//   else{
+//     headerNav.removeClass('navcolor');
+//   }
+//
+//   if (distanceScrolled>100) {
+//     $(".statement .img").fadeIn(1500);
+//   }
+//   else if (distanceScrolled=50) {
+//     $(".statement .img").fadeOut(0);
+//   }
+// });
 
 $(document).ready(function(){
     // myVar = setInterval("nextMsg()", 3000);
+    console.log(screen.width);
 });
 
 $(window).on('scroll', function () {
-	// Step 1: Google $(window).scrollTop();
 	var distanceScrolled = $(window).scrollTop();
 
-	// Step 2: Log distanceScrolled to the console to see what it holds!
 	console.log(distanceScrolled);
-	// if distanceScrolled is greater than or equal to 542
 	if (distanceScrolled > 100) {
 
 		// Add a class to the nav to make it fixed
-<<<<<<< HEAD
-		$('.nav_logo').fadeIn(500);
-=======
-		$('.nav_logo').removeClass('hidden');
->>>>>>> 7b2dd6b3fc0ea23d5b1cd4227695458fe8fcb5cf
+		$('.main_nav').addClass('solid');
 	}
 	// else
 	// Remove the class from the nav to make it unfixed
 	else {
-<<<<<<< HEAD
-		$('.nav_logo').fadeOut(200);
+		$('.main_nav').removeClass('solid');
 	}
 });
 
@@ -90,8 +83,11 @@ $('.advanced-button').on('click', function () {
 $('.course-list li').on('click', function () {
   $(this).next().slideToggle(500);
 });
-=======
-		$('.nav_logo').addClass('hidden');
-	}
+
+
+$(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top -50}, 500, 'linear');
+  });
 });
->>>>>>> 7b2dd6b3fc0ea23d5b1cd4227695458fe8fcb5cf
